@@ -6,4 +6,5 @@
 # server_user@111.111.111.111:/directory_of_the_new_machine -> the  user and ip of the new machine storage
 # ( please take present to use a ssh without password login from both machines)
 # 
+# More infor at http://www.klevinkona.com/blog/backup-linux-files-database/6393/
 cd /root/backup/ && tar cfz  backup-$(date +%Y-%m-%d).tar.gz /var/www/html && scp backup-$(date +%Y-%m-%d).tar.gz server_user@111.111.111.111:/directory_of_the_new_machine
